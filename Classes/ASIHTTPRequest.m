@@ -2826,7 +2826,6 @@ static NSOperationQueue *sharedQueue = nil;
 			}
 			[delegateAuthenticationLock unlock];
 		}
-		[self cancelLoad];
 		[self failWithError:ASIAuthenticationError];
 		return;
 	}
